@@ -18,6 +18,7 @@ import java.util.logging.Logger;
 public class HostBlackListsValidator {
 
     private static final int BLACK_LIST_ALARM_COUNT=5;
+    private int N;
     
     /**
      * Check the given host's IP address in all the available black lists,
@@ -32,7 +33,7 @@ public class HostBlackListsValidator {
     public List<Integer> checkHost(String ipaddress){
         
         LinkedList<Integer> blackListOcurrences=new LinkedList<>();
-        
+    
         int ocurrencesCount=0;
         
         HostBlacklistsDataSourceFacade skds=HostBlacklistsDataSourceFacade.getInstance();
@@ -65,6 +66,7 @@ public class HostBlackListsValidator {
     
     private static final Logger LOG = Logger.getLogger(HostBlackListsValidator.class.getName());
     
-    
-    
 }
+
+
+//:c
