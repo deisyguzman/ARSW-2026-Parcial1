@@ -50,7 +50,7 @@ public class HostBlackListsValidator {
                 ocurrencesCount++;
             }
         }
-        
+
         if (ocurrencesCount>=BLACK_LIST_ALARM_COUNT){
             skds.reportAsNotTrustworthy(ipaddress);
         }
